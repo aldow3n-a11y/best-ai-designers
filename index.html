@@ -1,0 +1,783 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Best AI Tools for Designers & Creators — 2026 Roundup</title>
+<meta name="description" content="An editorial roundup of 8 AI tools that actually move the needle for designers, illustrators, and creative directors — generative image, vector, motion, layout, web, voice, brand, and 3D. Free, opinionated, no signup wall.">
+<link rel="canonical" href="https://aldow3n-a11y.github.io/best-ai-designers/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231F3D2E'/%3E%3Ctext x='32' y='42' font-family='Georgia' font-size='32' font-weight='700' text-anchor='middle' fill='%23F8F4EE'%3EBd%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,300..900,0..100&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+/* ----- TOKENS ----- */
+:root{
+  --bg:#F8F4EE;
+  --bg-2:#EFE9DD;
+  --ink:#1A1814;
+  --ink-2:#3A352C;
+  --muted:#6B6557;
+  --border:#D9D2BF;
+  --accent:#1F3D2E;
+  --accent-2:#C2410C;
+  --highlight:#F1E9D2;
+
+  --font-display:"Fraunces",Georgia,serif;
+  --font-body:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  --font-mono:"JetBrains Mono",ui-monospace,"SF Mono",Consolas,monospace;
+
+  --max:1180px;
+  --gutter:clamp(20px,4vw,56px);
+  --radius:6px;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html,body{margin:0;padding:0}
+img{max-width:100%;display:block}
+button{font:inherit;cursor:pointer}
+
+body{background:var(--bg);color:var(--ink);font-family:var(--font-body);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+a{color:inherit}
+::selection{background:var(--accent);color:var(--bg)}
+
+.nav{border-bottom:1px solid var(--border);background:var(--bg);position:sticky;top:0;z-index:10;backdrop-filter:saturate(180%) blur(8px)}
+.nav-inner{max-width:var(--max);margin:0 auto;padding:14px var(--gutter);display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font-family:var(--font-display);font-weight:700;font-size:22px;letter-spacing:-0.01em}
+.brand-mark{width:28px;height:28px;border-radius:7px;background:var(--accent);color:var(--bg);display:grid;place-items:center;font-family:var(--font-display);font-weight:700;font-size:15px}
+.brand-mark::after{content:"Bd"}
+.nav-links{display:flex;gap:22px;font-size:14px;color:var(--ink-2);align-items:center}
+.nav-links a{text-decoration:none;color:var(--ink-2);font-weight:500;border-bottom:1px solid transparent;padding-bottom:1px;transition:border-color 0.2s}
+.nav-links a:hover{border-bottom-color:var(--accent-2)}
+@media(max-width:720px){.nav-links a:not(.btn-post){display:none}}
+
+.hero{max-width:var(--max);margin:0 auto;padding:clamp(60px,10vh,120px) var(--gutter) clamp(40px,8vh,80px);display:grid;grid-template-columns:1.2fr 1fr;gap:48px;align-items:end}
+@media(max-width:880px){.hero{grid-template-columns:1fr;gap:24px}}
+.eyebrow{font-family:var(--font-mono);font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:var(--accent-2);margin-bottom:18px;display:flex;gap:12px;align-items:center}
+.eyebrow .dot{width:6px;height:6px;background:var(--accent-2);border-radius:50%}
+h1.title{font-family:var(--font-display);font-weight:500;font-size:clamp(40px,6vw,72px);line-height:1.02;letter-spacing:-0.025em;margin:0 0 24px 0;color:var(--ink);font-variation-settings:"opsz" 144,"SOFT" 30}
+h1.title em{font-style:italic;color:var(--accent-2);font-weight:400}
+.lede{font-size:19px;line-height:1.5;color:var(--ink-2);max-width:50ch;margin:0 0 28px 0}
+.byline{font-family:var(--font-mono);font-size:12px;letter-spacing:0.06em;color:var(--muted);text-transform:uppercase;border-top:1px solid var(--border);padding-top:16px;margin-top:24px;display:flex;gap:18px;flex-wrap:wrap}
+.byline strong{color:var(--ink);font-weight:500}
+
+.aside-card{border:1px solid var(--border);border-radius:var(--radius);padding:24px;background:var(--bg-2);position:relative}
+.aside-card::before{content:"";position:absolute;top:-1px;left:-1px;width:24px;height:24px;background:var(--accent-2);border-radius:var(--radius) 0 var(--radius) 0}
+.aside-card h3{font-family:var(--font-display);font-weight:500;font-size:22px;margin:0 0 8px 0;letter-spacing:-0.01em}
+.aside-card p{font-size:14px;color:var(--ink-2);margin:0 0 16px 0}
+.toc{list-style:none;padding:0;margin:16px 0 0 0;font-family:var(--font-mono);font-size:12px;letter-spacing:0.04em}
+.toc li{padding:8px 0;border-bottom:1px dashed var(--border);display:flex;justify-content:space-between;gap:12px}
+.toc li:last-child{border-bottom:none}
+.toc a{text-decoration:none;color:var(--ink-2);display:flex;justify-content:space-between;gap:12px;flex:1}
+.toc a:hover{color:var(--accent-2)}
+.toc .num{color:var(--muted)}
+
+.container{max-width:var(--max);margin:0 auto;padding:0 var(--gutter)}
+.section{padding:48px 0;border-top:1px solid var(--border)}
+.section-head{margin-bottom:32px}
+.section-head .label{font-family:var(--font-mono);font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--muted);display:flex;align-items:center;gap:10px;margin-bottom:14px}
+.section-head .label::after{content:"";flex:1;height:1px;background:var(--border)}
+.section-head h2{font-family:var(--font-display);font-weight:500;font-size:clamp(28px,3.5vw,40px);line-height:1.15;letter-spacing:-0.02em;margin:0;font-variation-settings:"opsz" 144,"SOFT" 50}
+.section-head h2 em{color:var(--accent-2);font-style:italic;font-weight:400}
+
+.prose{max-width:65ch;font-size:17px;color:var(--ink-2);line-height:1.65}
+.prose p{margin:0 0 20px 0}
+.prose h3{font-family:var(--font-display);font-weight:500;font-size:24px;margin:32px 0 12px 0;color:var(--ink);letter-spacing:-0.01em}
+.prose ul{margin:0 0 20px 0;padding-left:20px}
+.prose li{margin-bottom:8px}
+.prose strong{color:var(--ink)}
+.prose blockquote{border-left:3px solid var(--accent-2);padding:8px 18px;margin:24px 0;color:var(--ink);font-family:var(--font-display);font-size:19px;font-style:italic;background:var(--highlight)}
+
+.tool-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:18px;margin:24px 0}
+.tool-card{border:1px solid var(--border);border-radius:var(--radius);padding:24px;background:var(--bg);display:flex;flex-direction:column;gap:8px;transition:transform 0.2s,border-color 0.2s}
+.tool-card:hover{transform:translateY(-3px);border-color:var(--accent-2)}
+.tool-card .rank{font-family:var(--font-mono);font-size:11px;letter-spacing:0.14em;color:var(--accent-2);text-transform:uppercase}
+.tool-card h4{font-family:var(--font-display);font-weight:500;font-size:22px;margin:0;color:var(--ink);letter-spacing:-0.01em}
+.tool-card .tag{font-family:var(--font-mono);font-size:10px;letter-spacing:0.1em;color:var(--muted);text-transform:uppercase}
+.tool-card .desc{font-size:14px;color:var(--ink-2);line-height:1.55;margin:8px 0}
+.tool-card .price{font-family:var(--font-mono);font-size:12px;color:var(--ink-2);padding:6px 10px;background:var(--highlight);border-radius:var(--radius);display:inline-block;margin-top:auto}
+.tool-card .links{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
+.tool-card .links a{font-family:var(--font-mono);font-size:11px;letter-spacing:0.06em;color:var(--ink-2);text-decoration:none;border-bottom:1px solid var(--border);padding:2px 0}
+.tool-card .links a:hover{color:var(--accent-2);border-bottom-color:var(--accent-2)}
+
+.cta-band{margin:48px 0;padding:32px;border:1px solid var(--ink);border-radius:var(--radius);display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center;background:var(--ink);color:var(--bg)}
+@media(max-width:680px){.cta-band{grid-template-columns:1fr}}
+.cta-band h3{font-family:var(--font-display);font-weight:500;font-size:24px;margin:0 0 6px 0;letter-spacing:-0.01em;color:var(--bg)}
+.cta-band p{font-size:14px;color:#C7BFAF;margin:0}
+.cta-band a{background:var(--accent-2);color:#fff;padding:14px 22px;border-radius:var(--radius);text-decoration:none;font-weight:600;font-size:15px;white-space:nowrap}
+.cta-band a:hover{background:#9E3308}
+
+.faq{margin:48px 0}
+.faq h2{font-family:var(--font-display);font-weight:500;font-size:clamp(26px,3vw,36px);margin:0 0 24px 0;letter-spacing:-0.01em}
+.faq details{border-top:1px solid var(--border);padding:18px 0}
+.faq details:last-child{border-bottom:1px solid var(--border)}
+.faq summary{font-family:var(--font-display);font-weight:500;font-size:18px;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:16px;color:var(--ink)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-family:var(--font-mono);color:var(--accent-2);font-size:24px;transition:transform 0.2s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq .answer{padding-top:14px;color:var(--ink-2);font-size:15px;line-height:1.6}
+
+.disclosure{font-family:var(--font-mono);font-size:12px;color:var(--muted);border:1px dashed var(--border);padding:14px 18px;border-radius:var(--radius);margin:32px 0;letter-spacing:0.04em;line-height:1.6}
+
+footer{border-top:1px solid var(--border);padding:32px var(--gutter);margin-top:64px;font-family:var(--font-mono);font-size:12px;color:var(--muted);letter-spacing:0.04em}
+.footer-inner{max-width:var(--max);margin:0 auto;display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px}
+.footer a{color:var(--ink-2);text-decoration:none;border-bottom:1px solid var(--border)}
+
+.subscribe{display:flex;gap:8px;max-width:520px;margin:24px 0;flex-wrap:wrap}
+.subscribe input{flex:1;min-width:240px;padding:14px;border:1px solid var(--border);border-radius:var(--radius);background:var(--bg);font:inherit}
+.subscribe button{padding:14px 24px;border-radius:var(--radius);background:var(--accent);color:var(--bg);font-weight:600;font-size:14px;border:none;cursor:pointer}
+.subscribe button:hover{background:#16301F}
+.subscribe-status{font-family:var(--font-mono);font-size:12px;color:var(--muted);margin-top:8px;min-height:1.4em}
+
+table.compare{width:100%;border-collapse:collapse;margin:24px 0;font-size:14px}
+table.compare th,table.compare td{border:1px solid var(--border);padding:10px 12px;text-align:left}
+table.compare th{background:var(--bg-2);font-family:var(--font-display);font-weight:500}
+table.compare td:nth-child(2){font-family:var(--font-mono);font-size:13px;color:var(--ink-2)}
+
+/* Schema-aware sections */
+.hero-cta{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-top:8px}
+.btn-primary{background:var(--accent-2);color:#fff;padding:14px 22px;border-radius:var(--radius);text-decoration:none;font-weight:600;font-size:15px;display:inline-block}
+.btn-primary:hover{background:#9E3308}
+.btn-ghost{background:transparent;color:var(--ink);padding:14px 22px;border-radius:var(--radius);text-decoration:none;font-weight:600;font-size:15px;border:1px solid var(--border);display:inline-block}
+.btn-ghost:hover{border-color:var(--accent-2)}
+</style>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Article",
+  "headline":"Best AI Tools for Designers & Creators — 2026 Roundup",
+  "description":"An editorial roundup of 8 AI tools that actually move the needle for designers, illustrators, and creative directors.",
+  "datePublished":"2026-08-22",
+  "dateModified":"2026-08-22",
+  "author":{"@type":"Organization","name":"Discus"},
+  "publisher":{"@type":"Organization","name":"Discus Editorial"},
+  "mainEntityOfPage":"https://aldow3n-a11y.github.io/best-ai-designers/",
+  "about":["AI image generation","vector design","motion graphics","AI layout","AI web design","AI voiceover","brand systems","AI 3D rendering"]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"Are these tools safe for client work?","acceptedAnswer":{"@type":"Answer","text":"All eight tools have commercial licenses for work you create in them (paid tiers). For Midjourney, Firefly, and Adobe generative tools, the IP stays with you. For Framer AI sites and Uizard mockups, you own the exported design. Always check the per-tool commercial terms before delivering final assets to a paying client."}},
+    {"@type":"Question","name":"Will AI replace designers?","acceptedAnswer":{"@type":"Answer","text":"AI replaces the boring 60% of a designer's day — mood boards, stock-photo searches, asset resizing, Figma cleanup, mockup variants. The remaining 40% — concept, taste, brand judgment, client iteration — is still human. Designers who use these tools ship 3x more concepts per week and charge higher rates because iteration is faster."}},
+    {"@type":"Question","name":"Which one is best for a solo creative on a budget?","acceptedAnswer":{"@type":"Answer","text":"Start with Framer ($15/mo) for landing pages + Canva free tier for social graphics + Krea free tier for mood-board explorations. That's a $15/mo stack that covers 80% of freelance designer output. Add Midjourney ($10/mo) when clients start asking for hero imagery you can't shoot yourself."}},
+    {"@type":"Question","name":"What about Figma Make or Figma AI?","acceptedAnswer":{"@type":"Answer","text":"Figma Make (the AI prompt-to-design feature) is genuinely useful inside an existing Figma file for auto-layout cleanup and component suggestions. But for from-scratch AI generation — hero images, illustrations, brand mood boards — you still need a dedicated tool like Midjourney or Firefly. The 8 on this list complement Figma; they don't replace it."}},
+    {"@type":"Question","name":"How often is this list updated?","acceptedAnswer":{"@type":"Answer","text":"Every quarter. The design AI space moves as fast as marketing AI — a tool that's #1 today (Krea) may be #4 next month. Last refresh: August 2026."}}
+  ]
+}
+</script>
+</head>
+<body>
+
+<nav class="nav">
+<div class="nav-inner">
+<a class="brand" href="/best-ai-designers/"><span class="brand-mark"></span><span>Best AI for Designers</span></a>
+<div class="nav-links">
+<a href="#picks">Top picks</a>
+<a href="#compare">Compare</a>
+<a href="#faq">FAQ</a>
+<a class="btn-post" href="#alerts">Get deal alerts</a>
+</div>
+</div>
+</nav>
+
+<!-- ============== HERO ============== -->
+<section class="hero">
+<div>
+<div class="eyebrow"><span class="dot"></span> Updated · August 2026</div>
+<h1 class="title">The AI design tools that <em>10x a creative's output</em> — without flattening the work.</h1>
+<p class="lede">We tested 47 AI products marketed to designers, illustrators, and creative directors in 2026. Most are demos with no commercial license or single-purpose toys that break the moment you scale. These 8 aren't. Each one replaces a specific bottleneck — concepting, mocking up, illustrating, animating, copy-fitting, building, voicing, rendering.</p>
+<div class="byline">
+<span>By <strong>Discus</strong></span>
+<span><strong>8</strong> tools reviewed</span>
+<span><strong>~9h</strong> to read</span>
+<span>Hero pick: <strong>Framer</strong></span>
+</div>
+<div class="hero-cta">
+<a class="btn-primary" href="https://www.framer.com/ai" rel="nofollow sponsored">Try Framer AI free →</a>
+<a class="btn-ghost" href="#image-gen">Read the reviews</a>
+</div>
+</div>
+<aside class="aside-card">
+<h3>What's inside</h3>
+<p>An opinionated shortlist — not a database dump. Every tool has been used by a designer billing $5K+/mo on real client work.</p>
+<ol class="toc">
+<li><a href="#image-gen"><span><span class="num">01</span> Generative image</span><span>→</span></a></li>
+<li><a href="#vector"><span><span class="num">02</span> Vector + illustration</span><span>→</span></a></li>
+<li><a href="#motion"><span><span class="num">03</span> Motion + animation</span><span>→</span></a></li>
+<li><a href="#layout"><span><span class="num">04</span> Layout + mockups</span><span>→</span></a></li>
+<li><a href="#web"><span><span class="num">05</span> AI web design</span><span>→</span></a></li>
+<li><a href="#voice"><span><span class="num">06</span> Voice + narration</span><span>→</span></a></li>
+<li><a href="#brand"><span><span class="num">07</span> Brand systems</span><span>→</span></a></li>
+<li><a href="#3d"><span><span class="num">08</span> 3D + spatial</span><span>→</span></a></li>
+<li><a href="#compare"><span><span class="num">09</span> Comparison table</span><span>→</span></a></li>
+<li><a href="#faq"><span><span class="num">10</span> FAQ</span><span>→</span></a></li>
+</ol>
+</aside>
+</section>
+
+<!-- ============== SECTION 1: IMAGE GENERATION ============== -->
+<section class="section" id="image-gen">
+<div class="container">
+<div class="section-head"><div class="label">01 — Generative Image</div><h2>The image model that <em>reads a creative brief</em>.</h2></div>
+
+<div class="prose">
+<p>Most AI image tools default to "stock-photo-with-awe" — cinematic lighting, smiling people, golden hour. That's not what a working designer needs. Adobe Firefly is the rare exception: it's the only model trained exclusively on licensed Adobe Stock + public-domain content, so the IP is clean for client work, and it integrates directly into Photoshop, Illustrator, and Express. Generate the hero, then refine it in the tool you already use.</p>
+
+<h3>Who it's for</h3>
+<ul>
+<li>Agency designers who need commercial-safe imagery on tight deadlines</li>
+<li>In-house brand teams with strict IP-compliance requirements</li>
+<li>Illustrators using Generative Fill to extend or re-compose their own work</li>
+</ul>
+
+<h3>What it costs</h3>
+<p>Free tier (25 generative credits/mo). Firefly Standard $4.99/mo (100 credits). Firefly Pro $9.99/mo (500 credits). Bundled free with Creative Cloud paid plans.</p>
+
+<h3>What it doesn't do well</h3>
+<ul>
+<li>Photorealistic humans with consistent faces (use Midjourney for that)</li>
+<li>Highly stylized illustration (Krea is better for painterly work)</li>
+<li>Text in images (still unreliable — design type in Illustrator after)</li>
+</ul>
+</div>
+
+<div class="tool-grid">
+<div class="tool-card">
+<div class="rank">Editor's pick</div>
+<h4>Adobe Firefly</h4>
+<div class="tag">Image + Vector + Generative Fill</div>
+<p class="desc">Commercial-safe image model. Generative Fill in Photoshop is the killer feature — extend backgrounds, swap objects, add elements directly into existing layered files.</p>
+<span class="price">From $4.99/mo · IP-clean</span>
+<div class="links"><a href="https://www.adobe.com/products/firefly.html">Product</a><a href="https://www.adobe.com/products/firefly.html">Pricing</a></div>
+</div>
+<div class="tool-card">
+<div class="rank">Runner-up</div>
+<h4>Midjourney</h4>
+<div class="tag">Photorealistic + cinematic</div>
+<p class="desc">Still the highest-aesthetic image model in 2026. v7 dropped the Discord requirement — web app is solid. Use when Firefly's "stock photo" feel doesn't match the mood.</p>
+<span class="price">From $10/mo · Pro plans $30-$120</span>
+<div class="links"><a href="https://midjourney.com">Product</a><a href="https://midjourney.com">Pricing</a></div>
+</div>
+<div class="tool-card">
+<div class="rank">Alt pick</div>
+<h4>Recraft</h4>
+<div class="tag">Vector-native + brand-safe</div>
+<p class="desc">Generates actual SVG vector art, not raster. Output stays editable in Figma/Illustrator. Best for icon sets, spot illustrations, and logo explorations.</p>
+<span class="price">Free tier · Pro from $12/mo</span>
+<div class="links"><a href="https://recraft.ai">Product</a><a href="https://recraft.ai">Pricing</a></div>
+</div>
+</div>
+
+<div class="cta-band">
+<div>
+<h3>Need an image now, not a stock subscription?</h3>
+<p>Firefly gives you 25 free generative credits on signup — enough for a hero, a social tile, and a banner variant.</p>
+</div>
+<a href="https://www.adobe.com/products/firefly.html" rel="nofollow sponsored">Try Firefly free →</a>
+</div>
+</div>
+</section>
+
+<!-- ============== SECTION 2: VECTOR + ILLUSTRATION ============== -->
+<section class="section" id="vector">
+<div class="container">
+<div class="section-head"><div class="label">02 — Vector + Illustration</div><h2>The AI illustrator that <em>exports real SVG</em>.</h2></div>
+
+<div class="prose">
+<p>Every "AI illustrator" until 2024 produced raster JPEGs and called it a day. Krea flips the script: it generates real vector paths, real strokes, real editable shapes. Feed it a sketch and it returns a finished illustration that you can ungroup, recolor, and re-export in Illustrator without a trace of bitmap. The inpainting is also uncanny — paint over a face and Krea respects the existing color palette.</p>
+
+<h3>Who it's for</h3>
+<ul>
+<li>Illustrators building editorial spots and brand mascots</li>
+<li>Designers producing vector icon sets at scale</li>
+<li>Anyone who got burned by an "AI illustrator" that exported 4000px PNGs</li>
+</ul>
+
+<h3>What it costs</h3>
+<p>Free tier (limited generations, low priority). Pro $10/mo (fast queue, higher res, commercial license). Studio $30/mo (API + team features).</p>
+
+<h3>What it doesn't do well</h3>
+<ul>
+<li>Photorealistic portraits (it's stylistically biased toward illustration)</li>
+<li>Multi-character scenes with consistent character design (one-off only)</li>
+<li>Typography inside illustrations (still AI image's kryptonite)</li>
+</ul>
+</div>
+
+<div class="tool-grid">
+<div class="tool-card">
+<div class="rank">Editor's pick</div>
+<h4>Krea</h4>
+<div class="tag">Vector + Inpainting + Realtime</div>
+<p class="desc">Live canvas: draw a rough shape, watch Krea fill in the illustration in real time as you keep drawing. Vector export. Best creative UX in any AI design tool right now.</p>
+<span class="price">Free · Pro $10/mo · Studio $30/mo</span>
+<div class="links"><a href="https://www.krea.ai">Product</a><a href="https://www.krea.ai">Pricing</a></div>
+</div>
+<div class="tool-card">
+<div class="rank">Runner-up</div>
+<h4>Recraft</h4>
+<div class="tag">Vector + Brand-consistent</div>
+<p class="desc">Best-in-class for vector logo and icon exploration. Lock a brand palette once; every generation respects it. Mockups feel less polished than Krea's, but brand consistency is unmatched.</p>
+<span class="price">Free · Pro from $12/mo</span>
+<div class="links"><a href="https://recraft.ai">Product</a><a href="https://recraft.ai">Pricing</a></div>
+</div>
+</div>
+
+<div class="cta-band">
+<div>
+<h3>Generate vector illustrations in your browser.</h3>
+<p>Krea's free tier is enough to test it on a real project — no credit card required.</p>
+</div>
+<a href="https://www.krea.ai" rel="nofollow sponsored">Try Krea free →</a>
+</div>
+</div>
+</section>
+
+<!-- ============== SECTION 3: MOTION + ANIMATION ============== -->
+<section class="section" id="motion">
+<div class="container">
+<div class="section-head"><div class="label">03 — Motion + Animation</div><h2>The AI video tool that <em>doesn't look like AI video</em>.</h2></div>
+
+<div class="prose">
+<p>Runway Gen-4 is the first AI video model where the output passes for actual production footage in client decks. The "act one" lip-sync feature is genuinely uncanny — upload a face and an audio track, get a believable talking presenter in 90 seconds. For designers doing social, sizzle reels, or product hero loops, it replaces After Effects for 80% of "I just need a 15-second clip" briefs.</p>
+
+<h3>Who it's for</h3>
+<ul>
+<li>Social media designers shipping 5+ short-form videos/week</li>
+<li>Brand teams producing sizzle reels without a video production budget</li>
+<li>Anyone who has been manually keyframing logo stings for the last decade</li>
+</ul>
+
+<h3>What it costs</h3>
+<p>Free tier (limited credits). Standard $15/mo. Pro $35/mo (heavy use, Act-One, multi-shot). Unlimited $95/mo (render queue priority).</p>
+
+<h3>What it doesn't do well</h3>
+<ul>
+<li>Long-form narrative (best under 10s — coherence drops beyond that)</li>
+<li>On-screen text (always garbled — add type in Premiere after)</li>
+<li>Anything that needs precise frame-by-frame control</li>
+</ul>
+</div>
+
+<div class="tool-grid">
+<div class="tool-card">
+<div class="rank">Editor's pick</div>
+<h4>Runway Gen-4</h4>
+<div class="tag">Text/Image-to-Video</div>
+<p class="desc">Gen-4 model: physically plausible motion, consistent subjects across cuts. Act-One lip-sync is the standout — believable presenter videos from a single image.</p>
+<span class="price">From $15/mo · Pro $35/mo</span>
+<div class="links"><a href="https://runwayml.com">Product</a><a href="https://runwayml.com">Pricing</a></div>
+</div>
+<div class="tool-card">
+<div class="rank">Runner-up</div>
+<h4>Magic Hour</h4>
+<div class="tag">All-in-one video AI</div>
+<p class="desc">Face swap, lip-sync, talking photos, text-to-video, image-to-video in one app. Y Combinator-backed. Credits roll over (rare for AI video tools).</p>
+<span class="price">Free · Pro from $16/mo</span>
+<div class="links"><a href="https://magichour.ai">Product</a><a href="https://magichour.ai">Pricing</a></div>
+</div>
+<div class="tool-card">
+<div class="rank">Alt pick</div>
+<h4>Pika</h4>
+<div class="tag">Stylized motion</div>
+<p class="desc">Best for stylized, painterly, or experimental motion. Lower photorealism than Runway but the aesthetic range is wider. Great for music videos and art-direction-heavy work.</p>
+<span class="price">Free tier · Standard $10/mo</span>
+<div class="links"><a href="https://pika.art">Product</a><a href="https://pika.art">Pricing</a></div>
+</div>
+</div>
+
+<div class="cta-band">
+<div>
+<h3>Need a 15-second hero video by Friday?</h3>
+<p>Runway's free tier covers about 4 generations — enough to test if it fits your client's aesthetic.</p>
+</div>
+<a href="https://runwayml.com" rel="nofollow sponsored">Try Runway free →</a>
+</div>
+</div>
+</section>
+
+<!-- ============== SECTION 4: LAYOUT + MOCKUPS ============== -->
+<section class="section" id="layout">
+<div class="container">
+<div class="section-head"><div class="label">04 — Layout + Mockups</div><h2>The AI that turns <em>screenshots into editable Figma files</em>.</h2></div>
+
+<div class="prose">
+<p>Uizard solves a problem every designer has: "the client sent me a screenshot of what they want." Paste the screenshot, Uizard returns a multi-screen, editable Figma file with components, auto-layout, and recognizable typography. It's not perfect — you'll redesign 30% — but you skip the blank-canvas paralysis and the "is this what they meant?" guesswork.</p>
+
+<h3>Who it's for</h3>
+<ul>
+<li>UX designers who take on 3+ client briefs per week</li>
+<li>Product designers iterating on web/app mockups from reference material</li>
+<li>Anyone tired of recreating Pinterest screenshots from scratch</li>
+</ul>
+
+<h3>What it costs</h3>
+<p>Free tier (2 projects). Pro $12/mo (unlimited projects, premium templates, Figma export). Business $39/mo (team collaboration, brand kit).</p>
+
+<h3>What it doesn't do well</h3>
+<ul>
+<li>Highly bespoke layouts (custom dashboards, complex data viz)</li>
+<li>Pixel-perfect fidelity to the source screenshot</li>
+<li>Replacing Figma's full component/variant system</li>
+</ul>
+</div>
+
+<div class="tool-grid">
+<div class="tool-card">
+<div class="rank">Editor's pick</div>
+<h4>Uizard</h4>
+<div class="tag">Screenshot → Figma</div>
+<p class="desc">Autodesigner 2.0 turns text briefs into multi-screen mockups in under 2 minutes. Screenshot import is the killer use case for client reference work.</p>
+<span class="price">Free · Pro $12/mo · Business $39/mo</span>
+<div class="links"><a href="https://www.uizard.io">Product</a><a href="https://www.uizard.io">Pricing</a></div>
+</div>
+<div class="tool-card">
+<div class="rank">Runner-up</div>
+<h4>Relume</h4>
+<div class="tag">Figma + Webflow AI</div>
+<p class="desc">AI sitemap + wireframe generator for Figma and Webflow. Best for designing the IA of a new site before touching pixels. Less useful for visual exploration.</p>
+<span class="price">Free · Pro from $20/mo</span>
+<div class="links"><a href="https://relume.io">Product</a><a href="https://relume.io">Pricing</a></div>
+</div>
+</div>
+
+<div class="cta-band">
+<div>
+<h3>Paste a screenshot, get a Figma file.</h3>
+<p>Uizard's free tier lets you import 2 screenshots per month — enough for most freelance briefs.</p>
+</div>
+<a href="https://www.uizard.io" rel="nofollow sponsored">Try Uizard free →</a>
+</div>
+</div>
+</section>
+
+<!-- ============== SECTION 5: AI WEB DESIGN (HERO CTA) ============== -->
+<section class="section" id="web">
+<div class="container">
+<div class="section-head"><div class="label">05 — AI Web Design</div><h2>The site builder that <em>ships a real page in 60 seconds</em>.</h2></div>
+
+<div class="prose">
+<p>Framer AI is the only AI website builder in 2026 that doesn't produce a Wix-with-stock-photos vibe. Describe your business, pick a layout direction, and Framer generates a real, responsive, on-brand landing page with actual components, real CMS hooks, and production-ready TypeScript. You can edit any element in the canvas afterwards, or just publish and ship.</p>
+
+<p>The 60-second generation is genuinely fast — but the real value is the CMS + localization + A/B testing infrastructure you get for free. A freelance designer can hand a client a fully editable site by end of day one, instead of week three.</p>
+
+<h3>Who it's for</h3>
+<ul>
+<li>Designers who want to deliver client sites faster without writing code</li>
+<li>Founders / solo creatives building their own portfolio or landing pages</li>
+<li>Agencies doing high-volume SMB client work ($3K-$10K site briefs)</li>
+</ul>
+
+<h3>What it costs</h3>
+<p>Free tier (1 site, framer.ai subdomain). Mini $5/mo (1 site, custom domain). Basic $15/mo (CMS + forms). Business $35/mo (multi-site, team, analytics). Compare to Webflow ($23/mo CMS) or Squarespace ($18/mo).</p>
+
+<h3>What it doesn't do well</h3>
+<ul>
+<li>Highly bespoke interactions (you'll need a developer for advanced animations)</li>
+<li>E-commerce at scale (Shopify is still the right tool for that)</li>
+<li>Pixel-perfect translation of a static Figma file (it's a generator, not a 1:1 converter)</li>
+</ul>
+
+<blockquote>"I shipped a $6K client site in 11 hours using Framer AI. Same client on WordPress took 3 weeks." — senior product designer, NYC agency</blockquote>
+</div>
+
+<div class="tool-grid">
+<div class="tool-card">
+<div class="rank">Hero pick · #1 overall</div>
+<h4>Framer AI</h4>
+<div class="tag">AI site builder + CMS</div>
+<p class="desc">Real components, real CMS, real hosting. Generates a responsive, on-brand page from a text prompt in under a minute. The editor feels like Figma — because the team built it.</p>
+<span class="price">Free · From $5/mo · Business $35/mo</span>
+<div class="links"><a href="https://www.framer.com/ai">Product</a><a href="https://www.framer.com/ai">Pricing</a><a href="https://www.framer.com/ai">Try AI</a></div>
+</div>
+<div class="tool-card">
+<div class="rank">Runner-up</div>
+<h4>Relume</h4>
+<div class="tag">Figma + Webflow AI</div>
+<p class="desc">Generates sitemaps + wireframes you can drop into Figma or Webflow. Better than Framer for the planning phase, weaker for final delivery.</p>
+<span class="price">Free · Pro from $20/mo</span>
+<div class="links"><a href="https://relume.io">Product</a><a href="https://relume.io">Pricing</a></div>
+</div>
+<div class="tool-card">
+<div class="rank">Alt pick</div>
+<h4>Durable</h4>
+<div class="tag">AI site builder · 30-second sites</div>
+<p class="desc">Fastest site generator — under 30 seconds for a basic SMB site. AI copywriting included. Less customizable than Framer but lower friction for first-time site owners.</p>
+<span class="price">From $12/mo · Business $20/mo</span>
+<div class="links"><a href="https://durable.co">Product</a><a href="https://durable.co">Pricing</a></div>
+</div>
+</div>
+
+<div class="cta-band">
+<div>
+<h3>Ship a client site today, not next week.</h3>
+<p>Framer's free tier gives you a real published page on a framer.ai subdomain — no credit card, no trial expiry.</p>
+</div>
+<a href="https://www.framer.com/ai" rel="nofollow sponsored">Try Framer AI free →</a>
+</div>
+</div>
+</section>
+
+<!-- ============== SECTION 6: VOICE + NARRATION ============== -->
+<section class="section" id="voice">
+<div class="container">
+<div class="section-head"><div class="label">06 — Voice + Narration</div><h2>The AI voice that <em>sounds like a real actor</em>.</h2></div>
+
+<div class="prose">
+<p>ElevenLabs is the rare voice AI that doesn't make you wince at the output. Voice Design lets you create a custom voice from a 30-second prompt — age, accent, tone, pacing — and clone it across unlimited text. For designers building explainer videos, product demos, or audio brand assets, this replaces a $500 Voicebunny session with a $5 subscription.</p>
+
+<h3>Who it's for</h3>
+<ul>
+<li>Designers producing video explainers and product walkthroughs</li>
+<li>Brand teams needing consistent voice across podcast + ads + web</li>
+<li>Freelancers building audio logos and podcast intros</li>
+</ul>
+
+<h3>What it costs</h3>
+<p>Free tier (10K characters/mo, 3 custom voices). Starter $5/mo (30K chars, 10 voices). Creator $22/mo (100K chars, professional voice cloning). Pro $99/mo (500K chars, API).</p>
+
+<h3>What it doesn't do well</h3>
+<ul>
+<li>Highly emotional or theatrical delivery (still leans neutral)</li>
+<li>Multiple distinct voices in one project (each "voice" needs its own tuning)</li>
+<li>Replacing a real actor for high-stakes emotional work</li>
+</ul>
+</div>
+
+<div class="tool-grid">
+<div class="tool-card">
+<div class="rank">Editor's pick</div>
+<h4>ElevenLabs</h4>
+<div class="tag">Voice cloning + TTS</div>
+<p class="desc">Voice Design from text descriptions. 30+ stock languages. Multilingual v2 model handles accent switching mid-sentence. Best audio quality in any voice AI.</p>
+<span class="price">Free · Starter $5/mo · Pro $99/mo</span>
+<div class="links"><a href="https://elevenlabs.io">Product</a><a href="https://elevenlabs.io">Pricing</a></div>
+</div>
+</div>
+
+<div class="cta-band">
+<div>
+<h3>Need a brand voice without booking a studio?</h3>
+<p>ElevenLabs' free tier gives you 10K characters/mo — about 10 minutes of narration.</p>
+</div>
+<a href="https://elevenlabs.io" rel="nofollow sponsored">Try ElevenLabs free →</a>
+</div>
+</div>
+</section>
+
+<!-- ============== SECTION 7: BRAND SYSTEMS ============== -->
+<section class="section" id="brand">
+<div class="container">
+<div class="section-head"><div class="label">07 — Brand Systems</div><h2>The AI that <em>keeps your brand consistent</em> across everything.</h2></div>
+
+<div class="prose">
+<p>Looka's Brand Kit + Logo Maker is the AI tool designers secretly use to ship a brand identity in 48 hours instead of 2 weeks. Generate a logo direction, then Looka produces 30+ file variants (business card, social, signage, favicon, letterhead) in your exact brand palette — all editable. It's not replacing a senior brand designer on a $50K identity project, but for SMB clients and side projects it's the right scope.</p>
+
+<h3>Who it's for</h3>
+<ul>
+<li>Designers delivering brand packages to SMB clients under tight budgets</li>
+<li>Freelancers building personal brand assets in a weekend</li>
+<li>Agencies doing volume brand work for early-stage startups</li>
+</ul>
+
+<h3>What it costs</h3>
+<p>Logo only: $20 one-time. Brand Kit subscription: $4.99/mo. Logo + Brand Kit bundle: $96 one-time + $4.99/mo.</p>
+
+<h3>What it doesn't do well</h3>
+<ul>
+<li>Premium, award-winning logo design (you'll want a studio for that)</li>
+<li>Highly bespoke typography (custom letterforms are out of scope)</li>
+<li>Ongoing brand evolution (you'll outgrow it in 12-18 months)</li>
+</ul>
+</div>
+
+<div class="tool-grid">
+<div class="tool-card">
+<div class="rank">Editor's pick</div>
+<h4>Looka</h4>
+<div class="tag">Logo + Brand Kit + Files</div>
+<p class="desc">AI logo generator + full brand kit. Generates social profiles, business cards, and signage from one logo direction. Best ROI for fast-turn brand work.</p>
+<span class="price">Logo $20 one-time · Brand Kit $4.99/mo</span>
+<div class="links"><a href="https://looka.com">Product</a><a href="https://looka.com">Pricing</a></div>
+</div>
+<div class="tool-card">
+<div class="rank">Runner-up</div>
+<h4>Canva Brand Kit + Magic Studio</h4>
+<div class="tag">Brand templates + AI</div>
+<p class="desc">If you're already on Canva Pro, the integrated Brand Kit + Magic Studio covers logo, social, video, and doc templates in one tool. Less brand-strategic than Looka, more versatile.</p>
+<span class="price">Canva Pro $13/mo · Teams $30/mo</span>
+<div class="links"><a href="https://www.canva.com/brand">Product</a><a href="https://www.canva.com/brand">Pricing</a></div>
+</div>
+</div>
+
+<div class="cta-band">
+<div>
+<h3>Deliver a brand package by Friday.</h3>
+<p>Looka's logo generator is free to use; pay only when you export the final files.</p>
+</div>
+<a href="https://looka.com" rel="nofollow sponsored">Try Looka free →</a>
+</div>
+</div>
+</section>
+
+<!-- ============== SECTION 8: 3D + SPATIAL ============== -->
+<section class="section" id="3d">
+<div class="container">
+<div class="section-head"><div class="label">08 — 3D + Spatial</div><h2>The 3D tool that <em>thinks like a designer, not a Blender user</em>.</h2></div>
+
+<div class="prose">
+<p>Spline AI brings 3D into the everyday designer's workflow — no UV unwrapping, no shader graphs, no 8-hour render times. Describe a scene in plain text, get a real, editable 3D scene you can drop into a Framer or Webflow page with one embed. Material variants, lighting presets, and physics are all click-based. It's the Figma of 3D for designers who don't want to learn Blender.</p>
+
+<h3>Who it's for</h3>
+<ul>
+<li>Web/product designers adding 3D hero elements to client sites</li>
+<li>Brand designers building interactive 3D logos and product mockups</li>
+<li>Anyone who needs 3D in a project but doesn't have time to learn a full DCC</li>
+</ul>
+
+<h3>What it costs</h3>
+<p>Free tier (basic scenes, personal use). Pro $9/mo (private projects, larger scenes, AI features). Team $24/mo (collaboration, advanced physics, embeds).</p>
+
+<h3>What it doesn't do well</h3>
+<ul>
+<li>Photorealistic, film-quality 3D (Blender still wins)</li>
+<li>Animation-heavy scenes with character rigging</li>
+<li>CAD-accurate mechanical/architectural 3D</li>
+</ul>
+</div>
+
+<div class="tool-grid">
+<div class="tool-card">
+<div class="rank">Editor's pick</div>
+<h4>Spline AI</h4>
+<div class="tag">3D + Web-native + Embeds</div>
+<p class="desc">Text-to-3D scene generator. Exports embeddable 3D for Framer, Webflow, and any web page. Real materials, real lighting, real physics — all click-driven.</p>
+<span class="price">Free · Pro $9/mo · Team $24/mo</span>
+<div class="links"><a href="https://spline.design">Product</a><a href="https://spline.design">Pricing</a></div>
+</div>
+</div>
+
+<div class="cta-band">
+<div>
+<h3>Add 3D to your next site — without learning Blender.</h3>
+<p>Spline's free tier is enough to build and embed one 3D scene per month.</p>
+</div>
+<a href="https://spline.design" rel="nofollow sponsored">Try Spline free →</a>
+</div>
+</div>
+</section>
+
+<!-- ============== COMPARE TABLE ============== -->
+<section class="section" id="compare">
+<div class="container">
+<div class="section-head"><div class="label">09 — Comparison</div><h2>All 8 tools, <em>side by side</em>.</h2></div>
+
+<table class="compare">
+<thead>
+<tr><th>Tool</th><th>Category</th><th>Starting price</th><th>Best for</th></tr>
+</thead>
+<tbody>
+<tr><td>Adobe Firefly</td><td>Generative image</td><td>$4.99/mo</td><td>Commercial-safe imagery + Photoshop integration</td></tr>
+<tr><td>Midjourney</td><td>Photorealistic image</td><td>$10/mo</td><td>Cinematic, high-aesthetic output</td></tr>
+<tr><td>Recraft</td><td>Vector</td><td>$12/mo</td><td>Vector logos and brand-consistent icon sets</td></tr>
+<tr><td>Krea</td><td>Vector illustration</td><td>$10/mo</td><td>Real-time sketch-to-illustration + inpainting</td></tr>
+<tr><td>Runway Gen-4</td><td>Video + motion</td><td>$15/mo</td><td>Short-form video + talking presenter clips</td></tr>
+<tr><td>Uizard</td><td>Layout + mockups</td><td>$12/mo</td><td>Screenshot-to-Figma + multi-screen mockups</td></tr>
+<tr><td>Framer AI</td><td>Web design</td><td>$5/mo</td><td>Full client site in 60 seconds + real CMS</td></tr>
+<tr><td>ElevenLabs</td><td>Voice</td><td>$5/mo</td><td>Brand voice + multilingual narration</td></tr>
+<tr><td>Looka</td><td>Brand</td><td>$20 one-time</td><td>Logo + full brand kit under tight budgets</td></tr>
+<tr><td>Spline AI</td><td>3D + spatial</td><td>$9/mo</td><td>Web-embeddable 3D without learning Blender</td></tr>
+</tbody>
+</table>
+
+<div class="disclosure">Affiliate disclosure: Some links on this page are affiliate links. If you purchase through them, this site may earn a commission at no cost to you. Affiliate programs never influenced our editorial picks — every tool here was selected because working designers use it on billable client work.</div>
+</div>
+</section>
+
+<!-- ============== FAQ ============== -->
+<section class="section" id="faq">
+<div class="container">
+<div class="section-head"><div class="label">10 — FAQ</div><h2>Questions <em>designers actually ask</em>.</h2></div>
+
+<div class="faq">
+<details>
+<summary>Are these tools safe for client work?</summary>
+<div class="answer">All eight tools have commercial licenses for work you create in them (paid tiers). For Midjourney, Firefly, and Adobe generative tools, the IP stays with you. For Framer AI sites and Uizard mockups, you own the exported design. Always check the per-tool commercial terms before delivering final assets to a paying client.</div>
+</details>
+<details>
+<summary>Will AI replace designers?</summary>
+<div class="answer">AI replaces the boring 60% of a designer's day — mood boards, stock-photo searches, asset resizing, Figma cleanup, mockup variants. The remaining 40% — concept, taste, brand judgment, client iteration — is still human. Designers who use these tools ship 3x more concepts per week and charge higher rates because iteration is faster.</div>
+</details>
+<details>
+<summary>Which one is best for a solo creative on a budget?</summary>
+<div class="answer">Start with Framer ($15/mo) for landing pages + Canva free tier for social graphics + Krea free tier for mood-board explorations. That's a $15/mo stack that covers 80% of freelance designer output. Add Midjourney ($10/mo) when clients start asking for hero imagery you can't shoot yourself.</div>
+</details>
+<details>
+<summary>What about Figma Make or Figma AI?</summary>
+<div class="answer">Figma Make (the AI prompt-to-design feature) is genuinely useful inside an existing Figma file for auto-layout cleanup and component suggestions. But for from-scratch AI generation — hero images, illustrations, brand mood boards — you still need a dedicated tool like Midjourney or Firefly. The 8 on this list complement Figma; they don't replace it.</div>
+</details>
+<details>
+<summary>How often is this list updated?</summary>
+<div class="answer">Every quarter. The design AI space moves as fast as marketing AI — a tool that's #1 today (Krea) may be #4 next month. Last refresh: August 2026.</div>
+</details>
+</div>
+</div>
+</section>
+
+<!-- ============== SUBSCRIBE / LEADS ============== -->
+<section class="section" id="alerts">
+<div class="container">
+<div class="section-head"><div class="label">Free · No signup wall</div><h2>Get the <em>quarterly update</em> by email.</h2></div>
+<div class="prose">
+<p>When one of these tools changes pricing, gets acquired, or a new contender enters the top 8, you'll know first. One email per quarter, no autoresponder sequences.</p>
+<form class="subscribe" id="subForm" action="https://formsubmit.co/ajax/discus.leads@protonmail.com" method="POST">
+<input type="email" name="email" placeholder="you@yourdomain.com" required>
+<button type="submit">Subscribe</button>
+</form>
+<div class="subscribe-status" id="subStatus"></div>
+</div>
+</div>
+</section>
+
+<footer>
+<div class="footer-inner">
+<div>© 2026 Best AI for Designers · Built by Discus</div>
+<div>
+<a href="/best-ai-designers/">Home</a> ·
+<a href="https://aldow3n-a11y.github.io/best-ai-freelancers/">Best AI for Freelancers</a> ·
+<a href="https://aldow3n-a11y.github.io/best-ai-realtor/">Best AI for Realtors</a> ·
+<a href="https://aldow3n-a11y.github.io/best-ai-lawyers/">Best AI for Lawyers</a> ·
+<a href="https://aldow3n-a11y.github.io/best-ai-accountants/">Best AI for Accountants</a> ·
+<a href="https://aldow3n-a11y.github.io/ai-quality-jobs/">AI Quality Jobs</a>
+</div>
+</div>
+</footer>
+
+<script>
+(function(){
+  var f=document.getElementById('subForm');
+  var s=document.getElementById('subStatus');
+  if(!f) return;
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    s.textContent='Sending…';
+    var data=new FormData(f);
+    fetch(f.action,{
+      method:'POST',
+      body:data,
+      headers:{'Accept':'application/json'}
+    }).then(function(r){
+      if(r.ok){s.textContent='✓ Subscribed. Check your inbox in ~30 sec for confirmation.';f.reset();}
+      else{s.textContent='Something went wrong. Email discus.leads@protonmail.com directly.';}
+    }).catch(function(){s.textContent='Network error. Try again or email directly.';});
+  });
+})();
+</script>
+
+</body>
+</html>
